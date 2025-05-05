@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Artist</title>
+    <style>
+        section {
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #ce824a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 33px;
+        }
+        nav {
+            background-color: #ce824a;
+            padding: 5px;
+        }
+        nav a {
+            color: white;
+            margin:13px;
+        }
+         h2 {
+            color: #ce824a;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table, th, td {
+            border: 2px solid #ce824a;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #ce824a;
+            color: white;
+        }
+        
+        input, textarea {
+            width: 100%;
+            margin: 5px 0 15px;
+            border: 1px solid #ce824a;
+        }
+        
+        footer {
+            background-color: #ce824a;
+            color: white;
+            text-align: center;
+            padding: 8px;
+        }
+        
+        button{
+          background-color:#ce824a ;
+          color: white;
+          padding: 5px 10px;
+          border-color:white ;
+        }
+    </style>
+</head>
+<body>
+  <!--nav-->
+    <header>
+        <p><strong>Welcome to fatima world</strong></p>
+    </header>
+    
+    <nav><hr/>
+        <a href="#about">About</a>
+        <a href="#artwork">Artwork</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+        <!--about fatima-->
+        <section id="about">
+            <h2>About the Artist</h2>
+            <p>She is a Jordanian artist, born in Amman, who discovered her passion for painting at a young age and developed her skills over the years.</p>
+            <p>Fatima is a contemporary artist specializing in:</p>
+            <ul>
+                <li>Acrylic paintings</li>
+                <li>Visual art</li>
+                <li>Abstract art</li>
+                <li>Black and white art</li>
+            </ul>
+        </section>
+        <!--artwork-->
+        <section id="artwork">
+            <h2>Featured Artwork</h2>
+            <p>Here are some of Fatima's most popular pieces:</p>
+            
+            <!--artwork img-->
+            <img src="fatimada.png" alt="Artwork" width="350">
+            
+            <h3 style="Color: #ce824a;">Artwork Details</h3>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Materials</th>
+                    <th>Year</th>
+                    <th>Size</th>
+                </tr>
+                <tr>
+                    <td>The Cat Bubbles</td>
+                    <td>Acrylic on canvas</td>
+                    <td>2024</td>
+                    <td>70x50cm</td>
+                </tr>
+                <tr>
+                    <td>Crossed Shapes</td>
+                    <td>Acrylic on canvas</td>
+                    <td>2020</td>
+                    <td>100x100cm</td>
+                </tr>
+                <tr>
+                    <td>Stone Of Palestine</td>
+                    <td>Acrylic on canvas</td>
+                    <td>2024</td>
+                    <td>60x60cm</td>
+                </tr>
+            </table>
+        </section>
+        <!--form-->  <hr/>
+        <section id="contact">
+            <h2>Contact Fatima</h2>
+            <p>Use the form below to inquire about artwork and their prises:</p>
+            
+            <form method="post">
+                Name:
+                <input type="text" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <select id="subject" size="1" name="subject" style="border-color:#ce824a;">
+                    <option value="Artwork">Artwork Inquiry</option>
+                    <option value="Prise">Prise Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                Message:
+                <textarea name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    
+    <footer>
+        <p>&copy; 2023 Fatima's Art Gallery. All rights reserved.</p>
+        <p>Follow on social media: 
+            <a href="https://www.facebook.com/profile.php?id=61568524902012/" target="_blank" style="Color:white;">Facebook</a> | 
+            <a href="https://www.instagram.com/fatimadavid.a/" target="_blank" style="color:white;">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
